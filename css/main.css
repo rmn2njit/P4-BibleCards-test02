@@ -1,0 +1,252 @@
+/* DEVELOPER: Rodney Newton, IS117-101 -- 93569, Fall 2021 */
+
+/* the styles for the elements */
+html {
+	background-color: white;
+}
+body {
+	width: 90%;
+	max-width: 1024px;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	margin-top: 0;
+	margin-bottom: 5%;
+	margin-right: auto;
+	margin-left: auto;
+/*
+	width: 800px;
+	border: 3px solid #931420;
+	background-color: #fffded;
+*/
+}
+
+/* the styles for the header */
+header {
+/*
+	border-bottom: 3px solid #931420;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	background-image: -webkit-linear-gradient(
+		30deg, #f6bb73 0%, #f6bb73 10%, white 50%, #f6bb73 95%, #f6bb73 100%);
+ 	background-image: -webkit-linear-gradient(
+	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
+ */
+}
+header img {
+	float: left;
+	padding-right: 30px;
+	padding-left: 30px;
+/* 	padding-bottom: 1em;
+ */
+}
+header h2 {
+	font-size: 170%;
+    text-align: center;
+/*
+	color: #800000;
+ 	text-indent: 30px;
+ */
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+/* 	text-indent: 30px;
+ */
+}
+.shadow {
+	text-shadow: 4px 4px 4px #800000;
+}
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: yellow;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+ /*the styles for the main section */
+main {
+	width: 59.375%;
+	clear: left;
+/*
+	padding-right: 30px;
+	padding-left: 30px;
+*/
+}
+a:hover, a:focus {
+/*
+	font-style: italic;
+*/
+}
+
+main h1 {
+	font-size: 150%;
+	text-align: center;
+/*
+	border: 3px double #931420;
+ 	border-top: 3px solid #931420;
+	border-bottom: 3px solid #931420;
+	border-right: 3px solid #931420;
+	border-left: 3px solid #931420;
+ 
+	border-radius: 10px;
+	box-shadow: 5px 5px 0 0;
+	padding-top: .3em;
+	padding-bottom: .3em;
+	background-color: white;
+*/
+}
+
+main h2 {
+	font-size: 135%;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	text-align: center;
+	font-style: strong;
+}
+main h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+main p {
+	text-align: center;
+}
+
+/* the styles for the section section */
+section {
+	width: 59.375%;
+	float: left;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+section h1 {
+	font-size: 150%;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	margin-top: 0;				/* You need to explicitly set the top and bottom margins of this element to 0 because they’re set to .67 ems in the normalize.css style sheet */
+	margin-bottom: 0;
+}
+section h2 {
+	font-size: 130%;
+/*
+	color: #800000;
+*/
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+section p {
+	padding-bottom: .5em;
+}
+section blockquote {
+	padding-right: 2em;
+	padding-left: 2em;
+	font-style: italic;
+}
+section ul {
+	list-style-type: circle;
+	padding-bottom: .25em;
+	padding-left: 1.25em;
+}
+section li {
+	padding-bottom: .35em;
+}
+
+/* the styles for the article section */
+article {
+	padding-top: .5em;
+	padding-bottom: .5em;
+/*
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+*/
+}
+article img {
+	float: right;
+	margin: 1em 0 1em 1em;
+	border: 1px solid black;
+/*
+	margin-top: 1;
+	margin-bottom: 1;
+	margin-left: 1;
+*/
+}
+article h2 {
+	padding: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+/* the styles for the aside section */
+aside {
+	width: 34.375%;
+	float: right;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+aside img {
+/*
+	padding-top: .5em;
+*/
+	padding-bottom: 1em;
+}
+aside h2 {
+	font-size: 130%;
+/*
+	color: #800000;
+*/
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+/* the styles for the footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}
